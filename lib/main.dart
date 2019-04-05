@@ -28,6 +28,14 @@ class RandomWordsState extends State<RandomWords> {
   final Set<WordPair> _saved = new Set<WordPair>();
   final TextStyle _biggerFont = const TextStyle(fontSize: 18.0);
 
+  testWordPair() {
+    if (_suggestions.isEmpty) {
+      return false;
+    } else {
+      return true;
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return new Scaffold(

@@ -11,6 +11,11 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:flutter_playground/main.dart';
 
 void main() {
+  test('WordPair should not be empty.', () {
+    final randomWordState = RandomWordsState();
+    expect(randomWordState.testWordPair(), false);
+
+  });
 //  testWidgets('Counter increments smoke test', (WidgetTester tester) async {
 //    // Build our app and trigger a frame.
 //    await tester.pumpWidget(MyApp());
